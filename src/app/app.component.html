@@ -1,0 +1,25 @@
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap"
+  rel="stylesheet"
+/>
+<div>
+  <h1>CURRENCY PIPE</h1>
+</div>
+<div>
+  <h5>DHANA GRACE BERMUDEZ</h5>
+</div>
+
+<div class="bsdnote">
+  <b>Dollar currency: </b>{{ price | currency: '':true }} <br />
+  <b>Indian Rupee currency:</b> {{ price | currency: 'INR' }}
+</div>
+<div class="bsdnote orange">
+  <h3>Additional Currency Pipes</h3>
+  <b>Philippine currency:</b> {{ price | currency: 'PHP' }}<br />
+  <b>Currency without symbol:</b> {{ price | currency: 'CAD':'Canadian Dollar '
+  }}<br />
+  <b>Currency that display currency code: </b>
+  {{ price | currency: 'PHP ':'code' }}
+</div>
